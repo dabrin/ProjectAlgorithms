@@ -18,7 +18,7 @@ public class Movie {
     public Movie() {
         this.title="";
         this.genre=new Genre(this.genre.getName());
-        this.duration=0;
+        this.duration=0.0;
     }//constructor
 
     public Movie(String title, Genre genre, double duration) {
