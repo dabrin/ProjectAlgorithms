@@ -11,4 +11,41 @@ package Domain;
  */
 public class Genre {
     
-}
+    private String name, code;
+
+    public Genre() {
+        this.name="";
+        this.code="";
+    }//constructor
+
+    public Genre(String name) {
+        this.name = name;
+    }//constructor name
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    @Override
+    public String toString() {
+        return this.name + ", genre code=" + this.code + "\n";
+    }//toString
+    
+    
+    
+    
+    
+    
+}//END Genre
