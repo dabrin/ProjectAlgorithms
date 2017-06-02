@@ -11,6 +11,7 @@ package Domain;
  */
 public class Genre {
     
+//<<<<<<< HEAD
     private String name, code;
 
     public Genre() {
@@ -49,3 +50,25 @@ public class Genre {
     
     
 }//END Genre
+//=======
+//    private String genre;
+//
+//    public Genre() {
+//    }
+//    
+//
+//    public Genre(String genre) {
+//        this.genre = genre;
+//    }
+//
+//    public String getGenre() {
+//        return genre;
+//    }
+//
+//    public void setGenre(String genre) {
+//        this.genre = genre;
+//    }
+//    
+//    
+//}
+//>>>>>>> ddb174dc232ae8d16f4fe1ef65e6da14d23dbe32
