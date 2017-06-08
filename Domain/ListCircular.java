@@ -6,7 +6,14 @@
 package Domain;
 
 import Domain.NodeMulti;
+<<<<<<< HEAD
 import javax.swing.JOptionPane;
+=======
+<<<<<<< HEAD
+import javax.swing.JOptionPane;
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
 
 /**
  *
@@ -15,11 +22,22 @@ import javax.swing.JOptionPane;
 public class ListCircular {
 
     private NodeMulti head;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
     private NodeMulti tail;
     
     public ListCircular() {
         this.head=null;
         this.tail=null;
+<<<<<<< HEAD
+=======
+=======
+
+    public ListCircular() {
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
     }
 
     public ListCircular(NodeMulti head) {
@@ -34,6 +52,10 @@ public class ListCircular {
         this.head = head;
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
     public void insertarInicio(Movie d) {
         NodeMulti nuevo = new NodeMulti();
         nuevo.data=d;
@@ -72,11 +94,20 @@ public class ListCircular {
             
     }
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
     public boolean InsertarOrdenadamente() {
         return false;
     }
 
     public void printList() {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
         NodeMulti aux = new NodeMulti();
         aux = head;
         do {
@@ -84,6 +115,11 @@ public class ListCircular {
             aux=aux.nextPtr;    
         }while(aux!=head);
     
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
     }
 
 }

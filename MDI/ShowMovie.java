@@ -5,14 +5,29 @@
  */
 package MDI;
 
+<<<<<<< HEAD
 import Business.MovieBusiness;
+=======
+<<<<<<< HEAD
+import Business.MovieBusiness;
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
 import MDI.Principal;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.io.*;
+<<<<<<< HEAD
 import java.util.logging.Level;
 import java.util.logging.Logger;
+=======
+<<<<<<< HEAD
+import java.util.logging.Level;
+import java.util.logging.Logger;
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
 
 /**
  *
@@ -29,8 +44,15 @@ public class ShowMovie extends JInternalFrame implements ActionListener, ItemLis
     private JButton jbtnLoadMovies;
     private JButton jbtnLoadFiles;
     private JFileChooser jFileChooser;
+<<<<<<< HEAD
     private JTextField jtxField;
     public InputStream fondo = this.getClass().getResourceAsStream("/assets/fondo_abstract2.jpg");
+=======
+<<<<<<< HEAD
+    private JTextField jtxField;
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
 
     public ShowMovie() {
         super();
@@ -38,6 +60,7 @@ public class ShowMovie extends JInternalFrame implements ActionListener, ItemLis
         this.setLayout(null);
         this.setClosable(true);
         init();
+<<<<<<< HEAD
     }//constructor
 
     public void init() {
@@ -46,15 +69,37 @@ public class ShowMovie extends JInternalFrame implements ActionListener, ItemLis
         this.setEnabled(false);
         this.add(this.jtxField);
 
+=======
+    }
+
+    public void init() {
+<<<<<<< HEAD
+        this.jtxField=new JTextField();
+        this.jtxField.setBounds(500, 200, 130, 30);
+        this.setEnabled(false);
+        this.add(this.jtxField);
+        
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
         this.jcomboListado = new JComboBox();
         this.jcomboListado.setBounds(134, 100, 200, 30);
         this.jcomboListado.addActionListener(this);
         this.jcomboListado.setEditable(true);
+<<<<<<< HEAD
 
         for (int i = 0; i < 10; i++) {
             this.jcomboListado.addItem("" + i);
         }//for i
 
+=======
+<<<<<<< HEAD
+        for (int i = 0; i < 10; i++) {
+            this.jcomboListado.addItem(""+i);
+        }
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
         this.add(this.jcomboListado);
 
         this.jcomboMovieSearching = new JComboBox();
@@ -78,13 +123,22 @@ public class ShowMovie extends JInternalFrame implements ActionListener, ItemLis
         this.TextAreaMovies.setBounds(30, 200, 300, 400);
         this.add(this.TextAreaMovies);
 
+<<<<<<< HEAD
         this.jbtnLoadMovies = new JButton("Load Movies");
+=======
+        this.jbtnLoadMovies = new JButton("Load Movie");
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
         this.jbtnLoadMovies.setBounds(200, 40, 130, 30);
         this.jbtnLoadMovies.setEnabled(false);
         this.jbtnLoadMovies.addActionListener(this);
         this.add(this.jbtnLoadMovies);
+<<<<<<< HEAD
 
         this.jbtnLoadFiles = new JButton("Load File");
+=======
+        
+        this.jbtnLoadFiles=new JButton("Load File");
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
         this.jbtnLoadFiles.setBounds(500, 100, 130, 30);
         this.jbtnLoadFiles.addActionListener(this);
         this.add(this.jbtnLoadFiles);
@@ -97,14 +151,28 @@ public class ShowMovie extends JInternalFrame implements ActionListener, ItemLis
         this.jlbShowMovies.setBounds(30, 170, 120, 30);
         this.add(this.jlbShowMovies);
 
+<<<<<<< HEAD
     }//init
+=======
+<<<<<<< HEAD
+    }//init
+=======
+    }
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == jbtnLoadFiles) {
             this.jFileChooser = new JFileChooser();
+<<<<<<< HEAD
             // this.jFileChooser.showOpenDialog(null);
             this.jFileChooser.setCurrentDirectory(new java.io.File("."));
+=======
+<<<<<<< HEAD
+           // this.jFileChooser.showOpenDialog(null);
+           this.jFileChooser.setCurrentDirectory(new java.io.File("."));
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
             this.jbtnLoadMovies.setEnabled(true);
             File file = jFileChooser.getSelectedFile();
             this.jFileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
@@ -113,22 +181,35 @@ public class ShowMovie extends JInternalFrame implements ActionListener, ItemLis
             if (jFileChooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
                 try {
                     System.out.println("getCurrentDirectory(): " + jFileChooser.getCurrentDirectory());
+<<<<<<< HEAD
                     jtxField.setText(jFileChooser.getSelectedFile() + "");
                     String path = jFileChooser.getCurrentDirectory().getName();
                     System.err.println(path);
 
                     MovieBusiness movieB = new MovieBusiness();
+=======
+                    jtxField.setText(jFileChooser.getSelectedFile()+"");
+                    String path=jFileChooser.getCurrentDirectory().getName();
+                    System.err.println(path);
+                    
+                    MovieBusiness movieB=new MovieBusiness();
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
                     movieB.readFile(jtxField.getText());
                 } catch (IOException ex) {
                     Logger.getLogger(ShowMovie.class.getName()).log(Level.SEVERE, null, ex);
                 }
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
             } else {
                 System.out.println("No Selection ");
             }
             this.jcomboMovieSearching.setEnabled(true);
             this.jcomboMovieSearching.setEditable(true);
 
+<<<<<<< HEAD
         }if(e.getSource()==jbtnLoadMovies) {
             String out=this.jcomboMovieSearching.getName();
             JOptionPane.showMessageDialog(null, out);
@@ -140,6 +221,25 @@ public class ShowMovie extends JInternalFrame implements ActionListener, ItemLis
         if (ie.getItem()=="Drama") {
             String selected = (String) jcomboMovieSearching.getSelectedItem();
                 JOptionPane.showMessageDialog(null, selected);
+=======
+        }//if (e.getSource() == jbtnLoadFiles)
+    }//actionPerformed
+=======
+            this.jFileChooser.showOpenDialog(null);
+            this.jbtnLoadMovies.setEnabled(true);
+            this.jcomboMovieSearching.setEnabled(true);
+            File file = jFileChooser.getSelectedFile();
+            this.jcomboMovieSearching.setEditable(true);
+
+        }
+    }
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
+
+    @Override
+    public void itemStateChanged(ItemEvent ie) {
+        if(ie.getSource()==jcomboMovieSearching){
+            String selected=(String)jcomboMovieSearching.getSelectedItem();
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
 //            this.setTitle(selected);
         }
     }

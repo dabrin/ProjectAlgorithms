@@ -5,6 +5,10 @@
  */
 package algorithmsproject;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
 import Domain.Genre;
 import Domain.ListCircular;
 import Domain.Movie;
@@ -12,12 +16,22 @@ import MDI.Principal;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+<<<<<<< HEAD
+=======
+=======
+import MDI.Principal;
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
 
 /**
  *
  * @author dabri
  */
 public class AlgorithmsProject {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
 
     /**
      * @param args the command line arguments
@@ -39,4 +53,18 @@ public class AlgorithmsProject {
 
     }
 
+<<<<<<< HEAD
+=======
+=======
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       Principal principal=new Principal();
+       principal.setVisible(true);
+       
+    }
+    
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
 }

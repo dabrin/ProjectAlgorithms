@@ -5,6 +5,7 @@
  */
 package MDI;
 
+<<<<<<< HEAD
 import java.awt.event.*;
 import java.awt.image.*;
 import java.io.*;
@@ -12,6 +13,16 @@ import javax.imageio.*;
 import static javax.swing.JFrame.*;
 import javax.swing.*;
 import javax.swing.border.*;
+=======
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JDesktopPane;
+import javax.swing.JFrame;
+import static javax.swing.JFrame.EXIT_ON_CLOSE;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
 
 /**
  *
@@ -21,7 +32,10 @@ public class Principal extends JFrame implements ActionListener{
     private JMenuBar jmenuBar;
     private JMenuItem subMenu;
     private JMenuItem jmItemAgregarPelicula;
+<<<<<<< HEAD
     public InputStream fondo = this.getClass().getResourceAsStream("/assets/fondo_abstract.jpg");
+=======
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
     JDesktopPane desktopPane;
     
     public Principal(){
@@ -31,6 +45,7 @@ public class Principal extends JFrame implements ActionListener{
         this.desktopPane.setLayout(null);
 
         init();
+<<<<<<< HEAD
         
         loadImage(desktopPane, fondo);
         this.getContentPane().add(this.desktopPane); 
@@ -45,6 +60,16 @@ public class Principal extends JFrame implements ActionListener{
         }//catch Exception e
     }//cargarImagen
 
+=======
+        this.getContentPane().add(this.desktopPane);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+<<<<<<< HEAD
+    }//constructor
+    
+=======
+    }
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
     public void init(){
          this.jmenuBar = new JMenuBar();
         this.setJMenuBar(this.jmenuBar);
@@ -66,7 +91,19 @@ public class Principal extends JFrame implements ActionListener{
             ShowMovie movie=new ShowMovie();
             desktopPane.add(movie);
             movie.show();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
         }//if (e.getSource()==jmItemAgregarPelicula)
     }//actionPerformed
     
 }//END Principal
+<<<<<<< HEAD
+=======
+=======
+        }
+    }
+}
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
+>>>>>>> 836399eb8a7e17fc8f5862520c64eaaaad88d0ea
