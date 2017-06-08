@@ -10,6 +10,7 @@ package Domain;
  * @author dabri
  */
 public class Movie {
+<<<<<<< HEAD
     
     
     private String title;
@@ -35,6 +36,23 @@ public class Movie {
     }
 
    //constructor title genre duration
+=======
+    private String title;
+    private Genre genre;
+    private double duration;
+
+    public Movie() {
+        this.title="";
+        this.genre=new Genre(this.genre.getName());
+        this.duration=0;
+    }//constructor
+
+    public Movie(String title, Genre genre, double duration) {
+        this.title = title;
+        this.genre = genre;
+        this.duration = duration;
+    }//constructor title genre duration
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
 
     public String getTitle() {
         return title;
@@ -60,6 +78,7 @@ public class Movie {
         this.duration = duration;
     }
 
+<<<<<<< HEAD
     public int getTotal() {
         return total;
     }
@@ -86,4 +105,12 @@ public class Movie {
     public String toString() {
         return "Movie{" + "title=" + title + ", genre=" + genre + ", duration=" + duration + ", total=" + total + ", subtitle=" + subtitle + ", premier=" + premier + '}';
     }
+=======
+    @Override
+    public String toString() {
+        return "Movie: " + "title= " + this.title + ", genre= " + this.genre.toString() + ", duration=" + this.duration + "\n";
+    }//toString
+    
+    
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
 }//END Movie

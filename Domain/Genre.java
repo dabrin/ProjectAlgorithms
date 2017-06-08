@@ -19,9 +19,14 @@ public class Genre {
         this.code="";
     }//constructor
 
+<<<<<<< HEAD
     public Genre(String name, String code) {
         this.name = name;
         this.code=code;
+=======
+    public Genre(String name) {
+        this.name = name;
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
     }//constructor name
 
     public String getName() {
@@ -42,6 +47,12 @@ public class Genre {
 
     @Override
     public String toString() {
+<<<<<<< HEAD
         return this.name + " code=" + this.code + " ";
     }//toString   
 }
+=======
+        return this.name + ", genre code=" + this.code + "\n";
+    }//toString
+}//END
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff

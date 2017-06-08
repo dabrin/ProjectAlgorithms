@@ -5,14 +5,20 @@
  */
 package MDI;
 
+<<<<<<< HEAD
 import Business.MovieBusiness;
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
 import MDI.Principal;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.io.*;
+<<<<<<< HEAD
 import java.util.logging.Level;
 import java.util.logging.Logger;
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
 
 /**
  *
@@ -29,7 +35,10 @@ public class ShowMovie extends JInternalFrame implements ActionListener, ItemLis
     private JButton jbtnLoadMovies;
     private JButton jbtnLoadFiles;
     private JFileChooser jFileChooser;
+<<<<<<< HEAD
     private JTextField jtxField;
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
 
     public ShowMovie() {
         super();
@@ -40,18 +49,24 @@ public class ShowMovie extends JInternalFrame implements ActionListener, ItemLis
     }
 
     public void init() {
+<<<<<<< HEAD
         this.jtxField=new JTextField();
         this.jtxField.setBounds(500, 200, 130, 30);
         this.setEnabled(false);
         this.add(this.jtxField);
         
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
         this.jcomboListado = new JComboBox();
         this.jcomboListado.setBounds(134, 100, 200, 30);
         this.jcomboListado.addActionListener(this);
         this.jcomboListado.setEditable(true);
+<<<<<<< HEAD
         for (int i = 0; i < 10; i++) {
             this.jcomboListado.addItem(""+i);
         }
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
         this.add(this.jcomboListado);
 
         this.jcomboMovieSearching = new JComboBox();
@@ -94,12 +109,17 @@ public class ShowMovie extends JInternalFrame implements ActionListener, ItemLis
         this.jlbShowMovies.setBounds(30, 170, 120, 30);
         this.add(this.jlbShowMovies);
 
+<<<<<<< HEAD
     }//init
+=======
+    }
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == jbtnLoadFiles) {
             this.jFileChooser = new JFileChooser();
+<<<<<<< HEAD
            // this.jFileChooser.showOpenDialog(null);
            this.jFileChooser.setCurrentDirectory(new java.io.File("."));
             this.jbtnLoadMovies.setEnabled(true);
@@ -128,6 +148,16 @@ public class ShowMovie extends JInternalFrame implements ActionListener, ItemLis
 
         }//if (e.getSource() == jbtnLoadFiles)
     }//actionPerformed
+=======
+            this.jFileChooser.showOpenDialog(null);
+            this.jbtnLoadMovies.setEnabled(true);
+            this.jcomboMovieSearching.setEnabled(true);
+            File file = jFileChooser.getSelectedFile();
+            this.jcomboMovieSearching.setEditable(true);
+
+        }
+    }
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
 
     @Override
     public void itemStateChanged(ItemEvent ie) {

@@ -33,8 +33,12 @@ public class Principal extends JFrame implements ActionListener{
         init();
         this.getContentPane().add(this.desktopPane);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+<<<<<<< HEAD
     }//constructor
     
+=======
+    }
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
     public void init(){
          this.jmenuBar = new JMenuBar();
         this.setJMenuBar(this.jmenuBar);
@@ -56,7 +60,13 @@ public class Principal extends JFrame implements ActionListener{
             ShowMovie movie=new ShowMovie();
             desktopPane.add(movie);
             movie.show();
+<<<<<<< HEAD
         }//if (e.getSource()==jmItemAgregarPelicula)
     }//actionPerformed
     
 }//END Principal
+=======
+        }
+    }
+}
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff

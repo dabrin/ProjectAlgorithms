@@ -6,7 +6,10 @@
 package Domain;
 
 import Domain.NodeMulti;
+<<<<<<< HEAD
 import javax.swing.JOptionPane;
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
 
 /**
  *
@@ -15,11 +18,16 @@ import javax.swing.JOptionPane;
 public class ListCircular {
 
     private NodeMulti head;
+<<<<<<< HEAD
     private NodeMulti tail;
     
     public ListCircular() {
         this.head=null;
         this.tail=null;
+=======
+
+    public ListCircular() {
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
     }
 
     public ListCircular(NodeMulti head) {
@@ -34,6 +42,7 @@ public class ListCircular {
         this.head = head;
     }
 
+<<<<<<< HEAD
     public void insertarInicio(Movie d) {
         NodeMulti nuevo = new NodeMulti();
         nuevo.data=d;
@@ -72,11 +81,14 @@ public class ListCircular {
             
     }
 
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
     public boolean InsertarOrdenadamente() {
         return false;
     }
 
     public void printList() {
+<<<<<<< HEAD
         NodeMulti aux = new NodeMulti();
         aux = head;
         do {
@@ -84,6 +96,8 @@ public class ListCircular {
             aux=aux.nextPtr;    
         }while(aux!=head);
     
+=======
+>>>>>>> a4999e88c921f8e5d53f8e458dbf4804bb99faff
     }
 
 }
